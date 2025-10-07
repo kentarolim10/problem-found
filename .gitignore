@@ -1,3 +1,4 @@
 collectors/reddit/.venv
+collectors/stex/.venv
 consumers/reddit/.venv
 .env

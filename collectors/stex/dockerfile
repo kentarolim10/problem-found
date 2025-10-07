@@ -1,0 +1,14 @@
+# Python base docker image
+FROM python:3.13-alpine
+
+# Set working directory inside container
+WORKDIR /app
+
+# Copy files into container directory
+COPY . /app
+
+# Install dependencies
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Command to run script
+CMD ["python", "stex-fetcher.py"]

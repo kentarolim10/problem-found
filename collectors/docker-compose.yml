@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  stex:
+    build:
+      context: ./stex
+      dockerfile: dockerfile
+    # restart: always
+    container_name: stex_fetcher
